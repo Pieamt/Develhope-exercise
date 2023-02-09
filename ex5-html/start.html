@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email"
+       pattern=".+@globex\.com" size="30" required>
+       <br>
+
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password"
+              minlength="8" required>
+              <br>
+    
+    <label for="name">Name and Lastname:</label>
+    <input type="text" placeholder="Pietro Amato" id="name" name="name" required>
+    <br>
+
+    <label for="birthday_date">Date of birth:</label>
+    <input type="date" id="birthday_date" name="birthday_date" max="2023-02-09" value="">
+    <br>
+
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br>
+
+    <label>Select for a choosing plan:</label>
+    <input type="radio" id="free" name="choose_plan" value="free">
+    <label for="free">Free</label>
+    <input type="radio" id="3plan" name="choose_plan" value="3plan">
+    <label for="3plan">Three different plans</label>
+    <input type="checkbox" id="proplan" name="proplan">
+    <label for="proplan">Pro Plan</label>
+    <br>
+
+    <label for="creditcard">Enter your creditcard number:</label>
+    <input type="number" id="creditcard" name="creditcard" max="16">
+    <small>Format: xxxx-xxxx-xxxx-xxxx</small>
+    <br>
+
+    <label for="cvc">Choose a CVC file:</label>
+    <input type="file"
+       id="cvc" name="cvc">
+       <br>
+
+    <label for="dateex">Expitation date:</label>
+    <input type="date" id="dateex" name="dateex"
+             min="2023-02-10" max="2026-12-31">
+             <br>
+       
+    <label for="address">Enter your address:</label>
+    <input type="text" id="address" name="address">
+  </body>
+</html>
