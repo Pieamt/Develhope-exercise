@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: rgb(183, 183, 128);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardcontainer h2 {
+    text-align: center;
+}
+
+.cardcontainer {
+    width: 300px;
+    height: 50%;
+    border: 2px solid black;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
