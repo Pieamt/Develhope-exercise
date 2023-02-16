@@ -1,0 +1,76 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+ }
+li,
+h2,
+ul
+  {
+     display: inline-block;
+     color: white;
+ }
+ 
+
+ .navbar-right{
+     text-align: right;
+     padding-right: 20px;
+ }
+ 
+ nav {
+    background-color: rgb(66, 39, 94);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 15px;
+ }
+
+ #Dropdown {
+    background-color:rgb(66, 39, 94) ;
+    border: none;
+    color: white;
+ }
+
+ .button {
+    background-color:rgb(66, 39, 94) ;
+    color: green;
+    border: 2px solid green;
+    padding: 5px;
+ }
+
+ .setinput {
+    padding: 5px;
+ }
+
+ 
+ 
+
+li{
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+       background-color: pink;
+    }
+   
+    ul,
+    .setinput,
+    .button {
+       display: none;
+    }
+   
+    .hamburger div {
+       width: 30px;
+       height: 3px;
+       background-color: black;
+       margin: 5px 0;
+    }
+   }
+   
