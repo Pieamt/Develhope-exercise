@@ -37,6 +37,12 @@ ul
     color: green;
     border: 2px solid green;
     padding: 5px;
+    border-radius: 2px;
+ }
+ 
+ .button:hover {
+   background-color: green;
+   color: white;
  }
 
  .setinput {
