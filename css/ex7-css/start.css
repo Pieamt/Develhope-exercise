@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#orange {
+    width: 30vw;
+    order: 3;
+}
+
+#yellow {
+    order: 0;
+}
+
+#red {
+    order: 1;
+}
+
+#green {
+    order: 2;
+}
+
+#blue {
+    order: 4;
+}
+
+/*body:nth-child(even) {
+    align-items: left;
+} 
+
+body:nth-child(odd) {
+   justify-content: right;
+
+} */
+
