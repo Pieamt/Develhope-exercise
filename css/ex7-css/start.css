@@ -24,13 +24,3 @@ body {
 #blue {
     order: 4;
 }
-
-/*body:nth-child(even) {
-    align-items: left;
-} 
-
-body:nth-child(odd) {
-   justify-content: right;
-
-} */
-
