@@ -1,0 +1,46 @@
+@mixin article-card($color, $font-size, $border-color) {
+  text-align: center;
+  color: $color;
+  font-size: $font-size;
+  border: 1px solid $border-color;
+}
+
+div {
+  border: 1px solid red;
+  width: 90%;
+  padding: 20px;
+
+  h1 {
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section article {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  section .odd {
+    @include article-card(blue, 1rem, green);
+  }
+
+  section .even {
+    @include article-card(red, 1rem, green);
+  }
+
+  section .footer {
+    @include article-card(green, 24px, blue);
+  }
+
+  section .footer {
+    width: 100%;
+  }
+}
