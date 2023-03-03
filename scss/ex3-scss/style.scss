@@ -1,0 +1,41 @@
+@use "function" as f;
+
+div {
+  border: 1px solid red;
+  width: 90%;
+  padding: 20px;
+
+  h1 {
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section article {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  section .odd {
+    @include f.article-card;
+  }
+
+  section .even {
+    @include f.article-cardd;
+  }
+
+  section .footer {
+    @include f.article-carddd;
+  }
+
+  section .footer {
+    width: 100%;
+  }
+}
