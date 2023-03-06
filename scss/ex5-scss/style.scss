@@ -1,0 +1,86 @@
+@use "function" as f;
+
+div {
+  border: 1px solid red;
+  width: 90%;
+  padding: 20px;
+
+  %text{
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+  
+  h1 {
+    @extend %text;
+    text-decoration: underline blue;
+  }
+
+  h2 {
+    @extend %text;
+    padding: 1rem;
+    border:1px solid red;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section article {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  section .odd {
+    @include f.article-card;
+  }
+
+  section .even {
+    @include f.article-cardd;
+  }
+
+  section .footer {
+    @include f.article-carddd;
+  }
+
+  section .footer {
+    width: 100%;
+  }
+
+}
+
+/*$classes : fs-1rem, fs-2rem, fs-3rem;
+
+@each $class in $classes {
+  @if $class == fs-1rem {
+    .fs-1rem {font-size: f.rem(16);}
+  }
+  @else if $class == fs-2rem {
+     .fs-2rem {font-size : f.rem(32);}
+  }
+  @else  {
+    .fs-3rem {font-size: f.rem(48);}
+  }
+}     altro modo, richiamando anche la funzione*/
+
+@each $key, $value in (1rem:1rem, 2rem:2rem, 3rem:3rem) {
+  .fs-#{$key} {font-size: $value;}
+}
+
+@for $var from 1 to 20 {
+ .numbers div:nth-child(#{$var}) {
+    border: 1px solid red;
+    width: 45px;
+    height: 45px;
+    background-color: darken(white, $var * 5%);
+    color: lighten(black, $var * 5%);
+ }
+ @if $var == 10 {
+  .numbers div:nth-child(#{$var}) {
+    background-color: blue;
+    color: red;
+  }
+ }
+}
