@@ -1,28 +1,33 @@
-const a = 2;
-const b = 4;
-const c = 5;
-
-// const sum = (a, b) => {
-//   return a + b;
-// }
-
-// const subtract = (a, b) => {
-//   return a - b;
-// }
-
-// const multiply = (a, b) => {
-//   return a * b;
-// }
-
-// const divide =  (a, b) => {
-//   return  a / b;
-// }
-
-
-const log = (a, b, c) => {
-  
-  value = ((a + b) * (a + c) - a ) / c;
-  return value;
+const sum = (a, b) => {
+  return a + b;
 }
 
-console.log(log(a, b, c))
+const subtract = (a, b) => {
+  return a - b;
+}
+
+const multiply = (a, b) => {
+  return a * b;
+}
+
+const divide =  (a, b) => {
+  return  a / b;
+}
+
+let firstSum = sum(2, 4);
+
+let secondSum = sum(2, 5);
+
+let firstMultiply = multiply(firstSum, secondSum);
+
+let firstSubtract = subtract(firstMultiply, 2);
+
+let firstDivide = divide(firstSubtract, 5);
+
+
+const log = function (value) {
+  value = firstDivide;
+  console.log(value);
+}
+
+log();
