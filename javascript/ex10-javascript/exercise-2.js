@@ -4,9 +4,6 @@ if (order && order.customer && order.customer.address && !order.customer.address
   console.log('City is required');
 }
 
-
-
-let values =  Object.values(order);
-if (values) {
+if (order?.customer?.address?.city) {
   console.log('City is required');
 }
