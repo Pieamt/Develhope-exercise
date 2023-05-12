@@ -10,8 +10,7 @@ export default class Login extends React.Component {
         console.log(memoValue)
     }
 
-    OnReset = (event) => {
-        event.preventDefault();
+    OnReset = () => {
         let deleteValue = {
         name : '' ,
         password : ''
