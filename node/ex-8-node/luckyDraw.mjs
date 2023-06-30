@@ -13,12 +13,19 @@ function luckyDraw(player) {
   }
 
 
-luckyDraw('Joe')
-.then(data => console.log(data))
-.catch(error => console.log(error))
-.then(() => luckyDraw('Caroline'))
-.then(data => console.log(data))
-.catch(error => console.log(error))
-.then(() => luckyDraw('Marco'))
-.then(data => console.log(data))
-.catch(error => console.log(error))
+  luckyDraw('joe')
+  .then((result) => {
+      console.log(result)
+      return luckyDraw('Carolina')
+  })
+  .then((result2) => {
+      console.log(result2)
+      return luckyDraw('Sabrina')
+  })
+  .then((result3) => {
+      console.log(result3)
+      
+  })
+  .catch((error) => {
+      console.log(error)
+  })
