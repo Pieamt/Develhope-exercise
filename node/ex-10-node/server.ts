@@ -1,11 +1,13 @@
 //ex-10
-require('dotenv').config();
-const express = require('express');
+import express from "express";
+import "express-async-errors"
+import morgan from "morgan"
+import 'dotenv/config.js'
+
 const app = express();
-require('express-async-errors').config();
-const joi = require('joi')
 app.use(express.json())
 app.use(morgan("dev"));
+import { getAll, getOne, create, updateById, deleteById} from "./controller/ex11-server.js";
 
 const port = process.env.PORT || 3000;
 
