@@ -3,7 +3,7 @@ const pgPromise = require('pg-promise');
 
 const db = pgPromise()("postgres://postgres:postgres98@localhost:5432/postgres");
 
-
+//ex-13
 const setupDb = async () => {
   await db.none(`
   DROP TABLE IF EXISTS planets;
@@ -61,6 +61,7 @@ const deleteById = async (req, res) =>{
     res.status(200).json({ msg: "The planet was deleted"});
   }
 
+  //ex-14
   const createImage = async (req, res) =>{
     const {id} = req.params;
     const filename = req.file?.path;

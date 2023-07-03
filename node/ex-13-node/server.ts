@@ -6,7 +6,7 @@ import { getAll, getOneById, create, updateById, deleteById, createImage} from "
 import multer from "multer"
 
 const app = express();
-
+//ex-14
 const storage = multer.diskStorage({
   destination:(req, file, cb) => {
     cb(null, "./uploads")
@@ -40,7 +40,7 @@ app.put("/api/planets/:id", updateById )
 //delete
 app.delete("/api/planets/:id", deleteById )
 
-//create image
+//create image  (ex-14)
 app.post("/api/planets/:id/image", upload.single("image"), createImage)
 
 app.listen(port, () => {
