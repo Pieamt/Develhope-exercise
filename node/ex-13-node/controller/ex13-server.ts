@@ -1,7 +1,7 @@
 const joi = require('joi')
 const pgPromise = require('pg-promise');
 
-const db = pgPromise()("postgres://postgres:postgres98@localhost:5432/postgres");
+const db = pgPromise()("postgres://postgres:postgres98@localhost:5432/planets");
 
 //ex-13
 const setupDb = async () => {
